@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>João Marcos Pereira De Souza</title>
+
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style media="screen">
+      .bg-cinza-claro{
+        background: #dcdcdc;
+      }
+      .icon-color{
+        background-color: red;
+      }
+      .bg-icon{
+        background-color: #bf40bf;
+        color: white;
+      }
+    </style>
+
+  </head>
+  <body>
+    <br>
+    <!-- Define o formato do site : inteiro ou centralizado -->
+    <div class="container bg-cinza-claro shadow-sm mt-4">
+
+      <div class="row">
+
+        <div class="col-lg-8 p-5">
+          <h3><strong>Nome : </strong> <span>João</span></h3>
+          <h3> <strong>Sobrenome : </strong> <span>Marcos Pereira</span></h3>
+        </div>
+
+        <!-- Serve para criar uma coluna e linha  -->
+        <div class="text-right col-lg p-5">
+          <h6 class="text-right "> Endereço  <i class="btn fas fa-home bg-icon ml-3"></i> </h6>
+          <h6 class="text-right">Telefone  <i class="btn fas fa-mobile-alt bg-icon ml-3"> </i> </h6>
+          <h6 class="text-right">Email <i class="btn fas fa-envelope bg-icon ml-3"></i> </h6>
+          <h6 class="text-right">Perfil Linkdin  <i class="btn fab fa-linkedin bg-icon ml-3"> </i></h6>
+          <h6 class="text-right">Twitter/BLog/Portifolio  <i class="btn fas fa-city bg-icon ml-3"> </i></h6>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container p-5">
+      <button type="button" class="btn fas fa-align-justify bg-icon ml-5 border"></button><span class="ml-3"> <strong>OBJETIVO</strong> </span>
+      <span>sfdssada</span>
+    </div>
+
+    <div class="container p-5">
+        <button type="button" class="btn fas fa-graduation-cap bg-icon ml-5"></button><span class="ml-3"> <strong>EDUCAÇÃO</strong> </span>
+    </div>
+
+    <div class="container p-5">
+        <button type="button" class="btn fas fa-briefcase   bg-icon ml-5"></button><span class="ml-3"> <strong>EXPERIÊNCIA</strong> </span>
+    </div>
+
+    <div class="container p-5">
+        <button type="button" class="btn fas fa-tools bg-icon ml-5"></button><span class="ml-3"> <strong>HABILIDADES</strong> </span>
+    </div>
+
+    <div class="container p-5">
+        <button type="button" class="btn fas fa-dice-three bg-icon ml-5"></button><span class="ml-3"> <strong>ATIVIDADES</strong> </span>
+    </div>
+
+  </body>
+</html>

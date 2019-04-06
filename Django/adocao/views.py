@@ -22,3 +22,6 @@ class CadastroView(TemplateView):
 # Página "Cadastro"
 class ContatoView(TemplateView):
     template_name = "contato.html"
+#Página do Curriculo
+class CurriculoView(TemplateView):
+    template_name = "curriculo.html"
