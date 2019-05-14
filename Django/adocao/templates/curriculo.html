@@ -2,108 +2,105 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>João Marcos Pereira De Souza</title>
 
-    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <style media="screen">
-      .bg-cinza-claro{
-        background: #E8E8E8;
-      }
-      /*Cor do icone dentro do botão, e definindo que quando o mouse passar por cima do botão ira ficar branco tbm*/
-      .bg-icon, .bg-icon:hover{
-        color: white;
-      }
-        /*Cor do icone*/
-      .roxo{
-        color: #9932CC;
-      }
-      .borda{
-        /*define a largura do icone*/
-        width:40px;
-        /* define a altura do icone */
-        height:40px;
-        /* Cor do background */
-        background-color:#9932CC;
-        /* arrendondando o botão */
-        border-radius: 150px;
-      }
-      .estagio{
-        color:#9932CC;
-      }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <title>João Marcos Pereira De Souza</title>
 
-  </head>
-  <body>
-    <br>
-    <!-- Define o formato do site : inteiro ou centralizado -->
-    <div class="container bg-cinza-claro shadow-sm mt-5">
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+    <link href="/static/css/cuuriculo.css" rel="stylesheet">
+</head>
 
-      <div class="row">
-
-        <div class="col-lg-8 p-5 mt-5 ml-5">
-          <h1>Nome : <span>João</span></h1>
-          <h1> <strong>Sobrenome :</strong>  <span>Marcos Pereira</span></h1>
-        </div>
-        <!-- Serve para criar uma coluna e linha  -->
-        <div class="text-right col-lg p-5 mt-5">
-          <h6 class="text-right "> Avenida João Alexandre<i class="fas fa-home ml-3 roxo "></i> </h6>
-          <h6 class="text-right">+55 44 9917-0238 <i class="fas fa-mobile-alt ml-3 roxo"> </i> </h6>
-          <h6 class="text-right">joao12308@hotmail.com <i class="fas fa-envelope ml-3 roxo"></i> </h6>
-          <h6 class="text-right">LinkDim<i class="fab fa-linkedin ml-3 roxo"> </i></h6>
-          <h6 class="text-right">Twitter/BLog/Portifolio  <i class="fa fa-globe roxo" ></i> </i></h6>
-        </div>
-      </div>
-    </div>
-
+<body>
+  <br>
+  <!-- Define o formato do site : inteiro ou centralizado -->
+  <div class="container bg-cinza-claro shadow-sm mt-5">
 
     <div class="row">
-      <div class="container p-5">
 
-        <button  class="btn fas fa-align-justify ml-5 bg-icon borda col-lg-8"></button><span class="ml-3"> <strong>OBJETIVO</strong> </span>
-        <p style="margin-left: 120px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-           hendrerit risus id lobortis facilisis. Aliquam eget lobortis erat. Phasellus porta elit dui,
-           et pretium massa dignissim vel. Fusce gravida urna nec gravida feugiat. Etiam tortor lectus,
-           hendrerit quis facilisis ut, gllis rutrum, lacus sem tempus dolor, sed viverra neque lectus a metus. Donec ullamcorper,
-            augue sit amet varius iaculis, diam orci lobortis elit, nec eleifend sapien erat id odio. In eget blandit nibh, fringilla vulputate quam. </p>
+      <div class="col-lg-8 p-5 mt-5 ml-5">
+        <h1>Nome : <span>João</span></h1>
+        <h1> <strong>Sobrenome :</strong> <span>Marcos Pereira</span></h1>
       </div>
-      <div class="container p-5">
-          <button type="button" class="btn fas fa-graduation-cap ml-5 bg-icon borda"></button><span class="ml-3"> <strong>EDUCAÇÃO</strong> </span>
-          <p style="margin-left: 120px;"> <strong>TADS</strong> | FACHA <br>
-          <strong>DATA</strong> 2017 - 2019 <br>
-          facilisis. Aliquam eget lobortis erat. Phasellus porta elit dui,
-          et pretium massa dignissim vel. Fusce gravida
-          <br><strong>Instituto Federal Do Paraná </strong> | TADS</p>
-      </div>
-
-      <div class="container p-5">
-          <button type="button" class="btn fas fa-briefcase ml-5 bg-icon borda"></button><span class="ml-3"> <strong>EXPERIÊNCIA</strong> </span>
-          <p style="margin-left: 120px;">
-          <span class="estagio">Estagio | </span>  Insituto Federal do Paraná - Campus Paranavaí <br>
-          <strong>Data</strong> 2018 - 2019<br>
-          Instalção de Softwares , manutenção dos computadores do campus, auxilio aos professores.
-          <br>
-          <span class="estagio"> Estagio | </span>  Prefeitura de Paranavaí <br>
-          <strong>Data</strong> 2015 - 2016<br>
-          Auxiliar de Pessoal, mexia com documentos em geral</p>
-      </div>
-
-      <div class="container p-5">
-          <button type="button" class="btn fas fa-tools ml-5 bg-icon borda"></button><span class="ml-3"> <strong>HABILIDADES</strong> </span>
+      <!-- Serve para criar uma coluna e linha  -->
+      <div class="text-right col-lg p-5 mt-5">
+        <h6 class="text-right "> Avenida João Alexandre<i class="fas fa-home ml-3 roxo "></i> </h6>
+        <h6 class="text-right">+55 44 9917-0238 <i class="fas fa-mobile-alt ml-3 roxo"> </i> </h6>
+        <h6 class="text-right">joao12308@hotmail.com <i class="fas fa-envelope ml-3 roxo"></i> </h6>
+        <h6 class="text-right"> <a href="https://www.linkedin.com/in/jo%C3%A3o-marcos-715b65185/">LinkedIn</a> <i
+            class="fab fa-linkedin ml-3 roxo"></i></h6>
+        <h6 class="text-right"><a href="https://twitter.com/joao12308">Twitter</a> / <a href="#">GitHub</a> / <a
+            href="#">Portfolio</a> <i class="fa fa-globe roxo"></i> </i></h6>
 
       </div>
+    </div>
+  </div>
 
-      <div class="container p-5">
-          <button type="button" class="btn fas fa-ellipsis-h bg-icon ml-5 borda"></button><span class="ml-3"> <strong>ATIVIDADES</strong> </span>
-          <p style="margin-left: 120px;" >Nos tempos livre eu gosto de jogar, assistir anime, filmes.</p>
-      </div>
 
+  <div class="row">
+    <div class="container p-5">
+
+      <button class="btn fas fa-align-justify ml-5 bg-icon borda col-lg-8"></button><span class="ml-3">
+        <strong>OBJETIVO</strong> </span>
+      <p style="margin-left: 120px;">Objetivo de obter experiência na área que estou cursando “Analise e
+        Desenvolvimento de Sistemas”, visando crescimento em um futuro emprego. </p>
+    </div>
+    <div class="container p-5">
+      <button type="button" class="btn fas fa-graduation-cap ml-5 bg-icon borda"></button><span class="ml-3">
+        <strong>EDUCAÇÃO</strong> </span>
+      <p style="margin-left: 120px;"> <strong>TADS</strong> | FACHA <br>
+        <strong>DATA</strong> 2017 - 2019 <br>
+        facilisis. Aliquam eget lobortis erat. Phasellus porta elit dui,
+        et pretium massa dignissim vel. Fusce gravida
+        <br><strong>Instituto Federal Do Paraná </strong> | TADS</p>
     </div>
 
-    <!-- Começo das informações gerais do curriculo -->
+    <div class="container p-5">
+      <button type="button" class="btn fas fa-briefcase ml-5 bg-icon borda"></button><span class="ml-3">
+        <strong>EXPERIÊNCIA</strong> </span>
+      <p style="margin-left: 120px;">
+        <span class="estagio">Estagio | </span> Insituto Federal do Paraná - Campus Paranavaí <br>
+        <strong>Data</strong> 2018 - 2019<br>
+        Instalção de Softwares , manutenção dos computadores do campus, auxilio aos professores.
+        <br>
+        <span class="estagio"> Estagio | </span> Prefeitura de Paranavaí <br>
+        <strong>Data</strong> 2015 - 2016<br>
+        Auxiliar de Pessoal, mexia com documentos em geral</p>
+    </div>
 
+    <div class="container p-5">
+      <button type="button" class="btn fas fa-tools ml-5 bg-icon borda"></button><span class="ml-3">
+        <strong>HABILIDADES</strong> </span>
 
-  </body>
+      <div style="margin-left: 120px;" class="row">
+        <div class="col">
+          <li class="">abilidades em jogar overwacht, e league of legends</li>
+          <li class="">abilidades com tecnologias de
+            hardware e software</li>
+        </div>
+
+        <div class="col">
+          <li class="">lobortis erat. Phasellus porta elit dui,
+            et pretium massa dignissim ve</li>
+          <li class="">lobortis erat. Phasellus porta elit dui,
+            et pretium massa dignissim ve</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5">
+      <button type="button" class="btn fas fa-ellipsis-h bg-icon ml-5 borda"></button><span class="ml-3">
+        <strong>ATIVIDADES</strong> </span>
+      <p style="margin-left: 120px;">Nos tempos livre eu gosto de jogar, assistir anime, filmes.</p>
+    </div>
+
+  </div>
+
+  <!-- Começo das informações gerais do curriculo -->
+
+</body>
+
 </html>

@@ -1,0 +1,40 @@
+.bg-cinza-claro {
+    background: #E8E8E8;
+  }
+
+  /*Cor do icone dentro do botão, e definindo que quando o mouse passar por cima do botão ira ficar branco tbm*/
+  .bg-icon,
+  .bg-icon:hover {
+    color: white;
+  }
+
+  /*Cor do icone*/
+  .roxo {
+    color: #9932CC;
+  }
+
+  .borda {
+    /*define a largura do icone*/
+    width: 40px;
+    /* define a altura do icone */
+    height: 40px;
+    /* Cor do background */
+    background-color: #9932CC;
+    /* arrendondando o botão */
+    border-radius: 150px;
+  }
+
+  .estagio {
+    color: #9932CC;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li:before {
+    content: '\2022';
+    margin: 0 3px;
+    color: #9932CC
+      /* Cor do li  */
+  }

@@ -1,5 +1,5 @@
-
-{% load static %}
+{% extends 'index.html' %}
+{{ block.super }}
 
 
 <!DOCTYPE html>
@@ -15,61 +15,76 @@
   <title>Bem vindo.</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+  <link href="css/agency.css" rel="stylesheet">
 
 </head>
 
-<body>
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Contate-nos</h2>
-        <h3 class="section-subheading text-muted"></h3>
+<body class="body">
+
+{% block servicos %}
+  <section class="contato container contact mt-5">
+    <img
+      src="https://media.discordapp.net/attachments/421847829070479360/571794689074790420/Anotacao_2019-04-27_172733.png"
+      class="mx-auto d-block" alt="logo branca">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br>
+          <h2 class="section-heading text-uppercase">Contate-nos</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Seu Nome *" required="required"
+                    data-validation-required-message="Informe seu nome.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Seu E-Mail *" required="required"
+                    data-validation-required-message="Informe seu Endereço de Email.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Seu celular *" required="required"
+                    data-validation-required-message="Informe seu numero de Telefone">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Sua Mensagem *" required="required"
+                    data-validation-required-message="Informe sua mensagem."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
+                  type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input class="form-control" id="name" type="text" placeholder="Seu Nome *" required="required" data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="form-group">
-                <input class="form-control" id="email" type="email" placeholder="Seu E-Mail *" required="required" data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="form-group">
-                <input class="form-control" id="phone" type="tel" placeholder="Seu celular *" required="required" data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Sua Mensagem *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-lg-12 text-center">
-              <div id="success"></div>
-              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Mande-nos uma mensagem</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+ {% endblock %}
+
+
 </body>

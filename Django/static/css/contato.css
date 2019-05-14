@@ -1,0 +1,12 @@
+body {
+    background: #212529;
+  }
+
+  .contato {
+    background-color: white;
+    background-image: url("../img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    Color: black;
+    border-radius: 100px;
+  }
